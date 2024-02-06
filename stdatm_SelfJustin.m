@@ -2,8 +2,16 @@ function [T, P, rho] = stdatm_SelfJustin(h)
 %stdatm_SelfJustin ARDC Std Atmosphere
 % %   Write a MATLAB function that calculates the air properties at a given 
 % altitude using the 1959 ARDC standard atmosphere model.  
-% The function should not output any variables to the Command Window 
-% (suppress with semi-colon).
+
+%{
+INPUT
+h in meters
+
+OUTPUTS
+T in K
+P in Pa
+rho in kg/m3
+%}
 
 % Constants
 g0 = 9.80665; % m/s^2
