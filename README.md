@@ -12,3 +12,5 @@ v0 = 7.5e3; % m/s; reentry velocity (LEO)
 The "new_EOMs" file will be useful for implementing a more robust reentry model that takes flight path angle (and its derivative) into account. 
 The "Example.m" file shows a useful example for plotting various ballistic coefficients (tumbling, etc) along with varying initial flight path angles for reentry. 
   This simulation was used as a homework assignment for Dr. Hiremath's "Reentry Aerodynamics" course in 2024. The problem includes the simulated deployment of a heatshield and characterizes the flight trajectory (2D) from 100 km to earth's surface.
+
+"stdatm_SelfJustin" is my home-built 1959 standard atmosphere code used to find density = f(alt). Use it or replace it with a better one.
