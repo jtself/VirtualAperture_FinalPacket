@@ -473,9 +473,9 @@ alt = state(1); % height part of the state vector
 % Changing gravity with altitude
 g = gravity(alt);
 
-% ~~~~~~~~~~ Replace with standard atmosphere solver of your choice ~~~~
+% ~~~~~~~~~~ May replace with standard atmosphere solver of your choice ~~~~
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[~,~,rho] = stdatm_SelfJustin(alt); % get rho at height
+[~,~,rho] = stdatm_SelfJustin(alt); % get rho at height [m]
 % ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 dx = -state(2); % velocity is the second column of the state vector
 
